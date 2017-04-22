@@ -13,6 +13,8 @@ export function MoviesList(props) {
           <td></td>
           <td>Year</td>
           <td>Title</td>
+          <td>Genres</td>
+          <td>Rating</td>
           <td>Price</td>
         </tr>
       </thead>
@@ -24,6 +26,8 @@ export function MoviesList(props) {
                 <td><img src={movie.image} style={{height: '150px'}} /></td>
                 <td>{movie.releaseYear}</td>
                 <td>{movie.title}</td>
+                <td>{movie.genres}</td>
+                <td>{movie.rating}</td>
                 <td>{`$${movie.price}`}</td>
               </tr>
             )
