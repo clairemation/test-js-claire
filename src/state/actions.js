@@ -26,7 +26,7 @@ export function getPopularMovies () {
     })
   );
   // Flatten the array of lists
-  const combinedResults = orderedYearLists.reduce((acc, curr) => acc.concat(curr) );
+  const combinedResults = orderedYearLists.reduce((acc, curr) => acc.concat(curr));
 
   return {
     type: 'GET_MOVIES_SUCCESS',
